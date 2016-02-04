@@ -10,6 +10,7 @@
   <title>Lista de amigos</title>
 </head>
 <body>
+<body style="background-image:url(http://www.hsjd.cl/web/wp-content/uploads/2013/08/telefono.jpg)">
   <div class="container" ng-controller="AppCtrl">
     <h1>APP Lista de amigos</h1>
 
@@ -35,7 +36,7 @@
           <td>{{contact.name}}</td>
           <td>{{contact.email}}</td>
           <td>{{contact.number}}</td>
-          <td><button class="btn btn-danger" ng-click="remove(contact._id)">Elminar</button></td>
+          <td><button class="btn btn-danger" ng-click="remove(contact._id)">Eliminar</button></td>
           <td><button class="btn btn-warning" ng-click="edit(contact._id)">Editar</button></td>
         </tr>
       </tbody>

@@ -1,4 +1,4 @@
-// MEAN Stack RESTful API Tutorial - Contact List App
+
 
 var express = require('express');
 var app = express();
@@ -7,7 +7,9 @@ var db = mongojs('contactlist', ['contactlist']);
 var bodyParser = require('body-parser');
 var port = process.env.PORT || 5000;
 
-app.set('port', (process.env.PORT || 5000));
+
+
+
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.json());
 
@@ -55,5 +57,5 @@ app.put('/contactlist/:id', function (req, res) {
   );
 });
 
-app.listen(process.env.PORT || 5000);
+app.listen(port);
 console.log("Server running on port 5000");

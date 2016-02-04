@@ -10,13 +10,13 @@
     "mongodb": "^2.1.4",
     "mongojs": "^0.18.1"
   },
+  "engines": {
+    "node": "4.x"
+  },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
-  },
-  "engines": {
-    "node": "5.5.0"
-	}
+  }
   
 }
